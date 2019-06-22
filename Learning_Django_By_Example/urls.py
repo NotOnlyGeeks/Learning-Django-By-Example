@@ -16,9 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from app1 import views
+from app1_Challenge import views as app1_challenge_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.index,name='index'),
+    path('',app1_challenge_views.index_challenge,name='index_challenge')
 ]
 
