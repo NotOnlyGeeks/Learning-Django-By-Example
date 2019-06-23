@@ -18,7 +18,6 @@ def add_topic():
     return t
 
 def generate(N=5):
-
     for i in range(N):
         t = add_topic()
 
