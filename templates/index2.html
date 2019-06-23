@@ -7,8 +7,27 @@
     <link rel="stylesheet" href="{% static 'css/my.css' %}">
 </head>
 <body>
-    <h1>This is index.html</h1>
-    <p>{{ insert_me }}</p>
+        {% if websites %}
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Date</th>
+            <th>URL</th>
+            <th>Type</th>
+        </tr>
+
+        {% for website in websites %}
+        <tr>
+            <td>{{ website.name }}</td>
+            <td>{{ website.date }}</td>
+            <td><a href="{{ website.name.url }}">{{ website.name.url }}</a></td>
+            <td>{{ website.name.topic.top_name }}</td>
+        </tr>
+        {% endfor %}
+        {% else %}
+            <h1>No records to display</h1>
+        {% endif %}
+    </table>
 
 </body>
 </html>
