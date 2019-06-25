@@ -5,7 +5,7 @@ import django
 django.setup()
 
 import random
-from app6.models import Users
+from app7.models import Users
 from faker import Faker
 
 fakegen = Faker()
