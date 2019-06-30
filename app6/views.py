@@ -8,3 +8,4 @@ def user_list(request):
 
 def index(request):
     return render(request,'index3.html')
+

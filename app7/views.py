@@ -10,3 +10,6 @@ def usersView(request):
     users = Users.objects.order_by('-FirstName')
     context = {'users': users}
     return render(request, 'users1.html', context=context)
+
+
+
