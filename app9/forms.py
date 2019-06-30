@@ -14,3 +14,4 @@ class FormName(forms.Form):
         if Email!=VerifyEmail:
             raise forms.ValidationError("Email and verify email does not match!")
 
+

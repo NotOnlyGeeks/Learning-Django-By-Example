@@ -20,3 +20,5 @@ def formPage(request):
             print('Email',email)
 
     return render(request,'formpage.html',{'form':form})
+
+
